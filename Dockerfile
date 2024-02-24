@@ -54,7 +54,7 @@ RUN set -xe && \
     rm -rf /var/lib/apt/lists/*
 
 ENV LD_PRELOAD /usr/local/lib/curl-impersonate/libcurl-impersonate-ff.so
-ENV CURL_IMPERSONATE ff91esr
+ENV CURL_IMPERSONATE ff117
 
 # logs should go to stdout / stderr
 RUN ln -sfT /dev/stderr /var/log/nginx/error.log; \
