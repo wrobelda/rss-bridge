@@ -41,5 +41,8 @@ fi
 # nginx will daemonize
 nginx
 
+export LD_PRELOAD="${LD_PRELOAD:?}"
+export CURL_IMPERSONATE="${CURL_IMPERSONATE:?}"
+
 # php-fpm should not daemonize
 exec php-fpm8.2 --nodaemonize
